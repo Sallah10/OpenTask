@@ -287,12 +287,12 @@ const Page = () => {
     <main>
       <h1 className="my-6 text-3xl font-bold text-black">Settings</h1>
       {/* <div className="flex max-w-[560px] gap-2 md:gap-6 rounded-md bg-white px-2 py-2 md:px-4 md:py-6 text-black"> */}
-      <div className="scrollbar-hide flex w-full gap-3 overflow-x-auto rounded-md bg-white px-4 py-4 text-black">
+      <div className="scrollbar-hide flex w-full gap-3 overflow-x-auto rounded-md bg-white px-4 py-4 text-black md:w-[560px]">
         {tabs.map((tab, idx) => (
           <h2
             key={tab.label}
             onClick={() => setActiveTab(idx)}
-            className={`cursor-pointer whitespace-nowrap rounded px-4 py-2 text-sm transition ${
+            className={`md:text-md cursor-pointer whitespace-nowrap rounded px-4 py-2 text-sm transition ${
               activeTab === idx ? 'bg-blue-600 font-bold text-white' : ''
             }`}
           >
